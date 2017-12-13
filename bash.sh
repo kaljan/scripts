@@ -104,4 +104,12 @@ sed 's/-D/DEFINES += /g' # заменяет -D на DEFINES +=
 # Офигенно крутой и полезный шаблон
 ls `find ./ -name lib*.so | sed 's/\/lib[[:graph:]]*.so//' | sort | uniq`
 
+# -------------------------------------------------------------------
+# цикл с инкрементом
+for ((SYMBOL=1; SYMBOL <= 100; SYMBOL++))
+do
+	echo $SYMBOL
+done
+
+
 
